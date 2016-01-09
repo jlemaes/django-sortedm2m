@@ -1,10 +1,28 @@
 Changelog
 =========
 
-1.1.0 (in development)
+1.2.0 (in development)
 ----------------------
 
-* `#59`_, `#65`_: Django 1.9 support. Thanks to Scott Kyle and Jasper Maes for
+* `#71`_: Don't break collectstatic for some cases. Therefore we removed the
+  STATIC_URL prefix from the form media definition in
+  ``SortedCheckboxSelectMultiple``. Thanks to Kirill Ermolov for the
+  patch.
+
+.. _#71: https://github.com/gregmuellegger/django-sortedm2m/issue/71
+
+1.1.1
+-----
+
+* `#70`_: CSS fix for Django 1.9 new admin design. Thanks to Maarten Draijer
+  for the patch.
+
+.. _#70: https://github.com/gregmuellegger/django-sortedm2m/pull/70
+
+1.1.0
+-----
+
+* `#59`_, `#65`_, `#68`_: Django 1.9 support. Thanks to Scott Kyle and Jasper Maes for
   patches.
 * `#67`_: Support for disabling migrations for some models, that can be
   decided by Django's DB router (with the ``allow_migrate_model`` method).
@@ -12,6 +30,8 @@ Changelog
 
 .. _#59: https://github.com/gregmuellegger/django-sortedm2m/pull/59
 .. _#65: https://github.com/gregmuellegger/django-sortedm2m/pull/65
+.. _#67: https://github.com/gregmuellegger/django-sortedm2m/pull/67
+.. _#68: https://github.com/gregmuellegger/django-sortedm2m/pull/68
 
 1.0.2
 -----
